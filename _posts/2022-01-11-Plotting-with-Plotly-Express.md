@@ -221,6 +221,6 @@ fig = px.scatter_3d(df, x='Culmen Depth (mm)', y='Culmen Length (mm)', z='Island
 
 fig.show()
 ```
-![image-example.png](/images/image-example.png)
+![3d_scatter.png](/images/3d_scatter.png)
 
 The above plot shows just how well the various penguin species are seperated when they are sorted by these three features. The fact that there is so little overlap makes it visually clear that if we are trying to seperate species based on features these are excellent features to split on. This means that this would likely be a good feature set to train a classifier on due to the clean seperations in the feature set.
