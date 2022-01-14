@@ -1,4 +1,7 @@
-## Using Plotly Express to Visualize the Palmer Penguins Dataset
+---
+layout: post
+title: Using Plotly Express to Visualize the Palmer Penguins Dataset
+---
 
 ## Intro
 
@@ -213,16 +216,3 @@ fig = px.scatter_3d(df, x='Culmen Depth (mm)', y='Culmen Length (mm)', z='Island
 fig.show()
 ```
 
-
-        <script type="text/javascript">
-        window.PlotlyConfig = {MathJaxConfig: 'local'};
-        if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
-        if (typeof require !== 'undefined') {
-        require.undef("plotly");
-        define('plotly', function(require, exports, module) {
-            /**
-* plotly.js v2.4.2
-* Copyright 2012-2021, Plotly, Inc.
-* All rights reserved.
-* Licensed under the MIT license
-*/
