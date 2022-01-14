@@ -204,7 +204,13 @@ penguins
 
 ## Plotting
 
-Now that we have our cleaned dataset, were almost ready to start plotting. The last thing we need to do is install the plotly express package on our computers. If you already have pip installed, this can easily be accomplished by running "pip install plotly_express==0.4.0" in a terminal window. Finally, we are ready to plot the data. In this example we will be creating a 3d scatter plot using the plotly express scatter_3d function. First we restrict the columns in the dataframe to those we want to sort our data points by, in this case, Culmen Depth, Culmen Length, Island, and Species. Then we use scatter_3d to scatter our datapoints in a 3d plot with Culmen Length on the x axis, Culmen Depth on the y axis, and Island on the z axis. The data points are color coded by species. 
+Now that we have our cleaned dataset, were almost ready to start plotting. The last thing we need to do is install the plotly express package on our computers. If you already have pip installed, this can easily be accomplished by running 
+
+```
+pip install plotly_express==0.4.0
+```
+
+ in a terminal window. Finally, we are ready to plot the data. In this example we will be creating a 3d scatter plot using the plotly express scatter_3d function. First we restrict the columns in the dataframe to those we want to sort our data points by, in this case, Culmen Depth, Culmen Length, Island, and Species. Then we use scatter_3d to scatter our datapoints in a 3d plot with Culmen Length on the x axis, Culmen Depth on the y axis, and Island on the z axis. The data points are color coded by species. 
 
 
 ```python
@@ -215,4 +221,6 @@ fig = px.scatter_3d(df, x='Culmen Depth (mm)', y='Culmen Length (mm)', z='Island
 
 fig.show()
 ```
+![image-example.png](/images/image-example.png)
 
+The above plot shows just how well the various penguin species are seperated when they are sorted by these three features. The fact that there is so little overlap makes it visually clear that if we are trying to seperate species based on features these are excellent features to split on. This means that this would likely be a good feature set to train a classifier on due to the clean seperations in the feature set.
