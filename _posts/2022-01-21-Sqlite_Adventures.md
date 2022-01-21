@@ -198,6 +198,7 @@ fig=temperature_coefficient_plot("India",
 fig.update_layout(title_text='Estimates of yearly increase in temperature in January <br> for stations in India, years 1980-2020', title_x=0.5)
 fig.show()
 ```
+{% include geo_scatter.html %}
 
 ## Creating a Temperature range Choropleth
 
@@ -315,6 +316,7 @@ fig=plot_temp_range_choropleth(2010,2020,height=500)
 fig.update_layout(title_text='Average annual temperature fluctuation by country 2010-2020<br> (Difference in hottest month vs coldest month)', title_x=0.5)
 fig.show()
 ```
+{% include Choropleth.html %}
 
 ## Creating a 3D Scatter Plot of Temperature and Elevation Data
 
@@ -427,3 +429,5 @@ fig.update_layout(title_text='Average temperature in China in January<br> plotte
 
 fig.show()
 ```
+
+{% include 3d.html %}
