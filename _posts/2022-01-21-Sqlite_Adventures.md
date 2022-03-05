@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Plotly Express to Visualize the Palmer Penguins Dataset
+title: SQLite Adventures!
 ---
 
 
