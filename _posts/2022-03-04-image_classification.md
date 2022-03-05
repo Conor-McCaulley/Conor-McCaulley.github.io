@@ -710,8 +710,3 @@ print(model4.metrics_names)
 As we can see above, this model produced a test data accuracy of ~99%! This is very high compaired to the other models we produced in this blog post and highlights the power of harnessing pretrained models through transfer learning. 
 
 You did it! Congrats! On to bigger and better adventures in transfer learning.
-
-
-```python
-
-```
